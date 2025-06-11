@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machika's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --lilac-light: #f3e8f7;
+      --lilac-main: #c8a2c8;
+      --lilac-dark: #b189b1;
+    }
+    
+
+    body {
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #110f0f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f3e8f7, #e9d8f4, #ffffff);
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--lilac-main);
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: var(--lilac-dark);
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: var(--lilac-main);
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: var(--lilac-main);
+      text-shadow: 0 2px 6px rgba(200, 162, 200, 0.4);
+    }
+    .card {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid #e0cfe7;
+      border-radius: 16px;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-img-top:hover {
+      box-shadow: 0 0 15px rgba(200, 162, 200, 0.6);
+      transform: scale(1.02);
+      transition: 0.3s ease;
+    }
+    .card-title {
+      color: var(--lilac-dark);
+    }
+    .btn-primary {
+      background-color: var(--lilac-main);
+      border-color: var(--lilac-dark);
+    }
+    .btn-primary:hover {
+      background-color: var(--lilac-dark);
+      border-color: var(--lilac-main);
+    }
+    footer {
+      background-color: var(--lilac-light);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--lilac-dark);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: var(--lilac-light);">
+    <div class="container">
+      <a class="navbar-brand" href="#">Machika Dewi Salsabilla</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="vh-100 d-flex align-items-center justify-content-center text-center" style="background-color: var(--lilac-light);" id="home">
+    <div class="container" data-aos="fade-in">
+      <h1 class="display-3 fw-bold" style="color: var(--lilac-dark);">Welcome to My Portofolio</h1>
+      <p class="lead" style="color: var(--lilac-main);">Desainer, Developer, dan Seniman Digital</p>
+    </div>
+  </header>
+
+  <section id="about" class="py-5" style="background-color: #f8f2fa;">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <p class="text-center">Halo! Saya Machika Dewi, seorang kreator digital yang mencintai dunia desain dan pengembangan. Saya suka mengeksplorasi ide melalui media visual dan interaktif, baik menggunakan Blender, Unity, maupun CorelDraw.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-5" style="background-color: var(--lilac-light);">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">My Portfolio</h2>
+      <div class="row text-center">
+        <div class="col-4 mb-4" data-aos="zoom-in">
+          <div class="card">
+            <a href="game-unity.png" data-lightbox="portfolio" data-title="Game Unity">
+              <img src="game-unity.png" class="card-img-top img-fluid" alt="Game Unity">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Game Unity</h5>
+              <p class="card-text">Simulasi kendaraan dan rintangan di Unity (Prototype).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card">
+            <a href="tangga-blender.png" data-lightbox="portfolio" data-title="Tangga Blender">
+              <img src="tangga-blender.png" class="card-img-top img-fluid" alt="Tangga Blender">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Tangga 3D</h5>
+              <p class="card-text">Animasi tangga dengan pengaturan kamera dan keyframe di Blender.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card">
+            <a href="bendera-blender.png" data-lightbox="portfolio" data-title="Simulasi Bendera">
+              <img src="bendera-blender.png" class="card-img-top img-fluid" alt="Simulasi Bendera">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Simulasi Bendera</h5>
+              <p class="card-text">Eksperimen simulasi bendera dan environment HDRI di Blender.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5" style="background-color: #f3e8f7;">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:machica.ds@gmail.com">machica.ds@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> (+62) 822-2874-7858</p>
+          <p><i class="fas fa-map-marker-alt"></i> Nganjuk, Jawa Timur, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Chika Dewi Salsabilla. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <img src="https://i.imgur.com/bFqZ6yz.png" alt="Ornamen Kupu" 
+       style="position: fixed; bottom: 0; left: 0; width: 120px; opacity: 0.3; z-index: -1;">
+</body>
+
+</html>
